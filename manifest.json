@@ -3,7 +3,7 @@
 
   "name": "QQZone Dynamic Emotion",
   "description": "Turn the static emotions in QQZone to dynamic",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "content_scripts": [
     {
@@ -11,7 +11,12 @@
       "js": ["replace.js"]
     }
   ],
-
+  "icons": 
+  { 
+    "16": "icon16.png",             
+    "48": "icon48.png",            
+    "128": "icon128.png" 
+  },  
   "browser_action": {
     "default_icon": "icon.png"
   }
