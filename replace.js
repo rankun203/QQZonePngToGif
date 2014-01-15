@@ -9,10 +9,10 @@ function doReplace() {
       var img = imgs[i];
       var src = img.src;
       if(typeof src !== 'undefined') {
-        if(src.indexOf("http://qzonestyle.gtimg.cn/qzone/em/") > -1) {
+        if(src.indexOf("http://qzonestyle.gtimg.cn/qzone/em/e") > -1) {
           img.src = "http://ctc.qzs.qq.com/qzone/em/" + src.match(/\e[\d]+/) + ".gif";
           continue;
-        } else if (src.indexOf("http://ctc.qzonestyle.gtimg.cn/qzone/em/") > -1) {
+        } else if (src.indexOf("http://ctc.qzonestyle.gtimg.cn/qzone/em/e") > -1) {
           img.src = "http://ctc.qzs.qq.com/qzone/em/" + src.match(/\e[\d]+/) + ".gif";
         }
       }
